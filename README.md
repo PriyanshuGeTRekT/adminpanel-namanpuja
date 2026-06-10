@@ -1,5 +1,10 @@
 # adminpanel-namanpuja
 
+> 🚀 **New to the project?** Read the full setup guide:
+> **[ONBOARDING.md](https://github.com/PriyanshuGeTRekT/backend-namanpuja/blob/main/ONBOARDING.md)**
+> (install everything → run the whole stack with `docker compose up`). The four repos
+> must be cloned as siblings in one folder.
+
 Admin panel for [namanpuja.com](https://namanpuja.com) — manage pujas, cities, temples, SEO location pages and bookings.
 
 ## Tech stack

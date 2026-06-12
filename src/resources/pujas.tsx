@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import {
 //   List, Datagrid, TextField, BooleanField, NumberField, ReferenceField,
 //   Edit, Create, TabbedForm, FormTab, TextInput, BooleanInput, NumberInput,
@@ -93,12 +94,23 @@ import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
 import CloseIcon from '@mui/icons-material/Close';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+=======
+import {
+  List, Datagrid, TextField, BooleanField, NumberField, ReferenceField,
+  Edit, Create, TabbedForm, FormTab, TextInput, BooleanInput, NumberInput,
+  SelectInput, ReferenceInput, required, SearchInput,
+} from 'react-admin';
+import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
+>>>>>>> 9888cddeb393b9a1829f2d0e9bf21fc13adc446a
 import { JsonInput } from '../components/JsonInput';
 
 export const pujaIcon = SelfImprovementIcon;
 
+<<<<<<< HEAD
 const ORANGE = '#E67A2E';
 
+=======
+>>>>>>> 9888cddeb393b9a1829f2d0e9bf21fc13adc446a
 const serviceTypes = [
   { id: 'EPUJA', name: 'Online e-Puja' },
   { id: 'HOME_VISIT', name: 'Home Visit' },
@@ -107,6 +119,7 @@ const serviceTypes = [
 
 const filters = [<SearchInput key="q" source="q" alwaysOn />];
 
+<<<<<<< HEAD
 // ─── Booking Form Modal (inline, no separate file needed) ─────────────────────
 const BookingFormModal = ({
   open,
@@ -288,6 +301,8 @@ const BookingPreviewButton = () => {
 };
 
 // ─── List (basePrice removed) ─────────────────────────────────────────────────
+=======
+>>>>>>> 9888cddeb393b9a1829f2d0e9bf21fc13adc446a
 export const PujaList = () => (
   <List filters={filters} sort={{ field: 'sortOrder', order: 'ASC' }}>
     <Datagrid rowClick="edit">
@@ -297,14 +312,23 @@ export const PujaList = () => (
         <TextField source="name" />
       </ReferenceField>
       <TextField source="serviceType" label="Type" />
+<<<<<<< HEAD
       <BooleanField source="isFeatured" label="Featured" />
       <BooleanField source="enabled" />
       <BookingPreviewButton />
+=======
+      <NumberField source="basePrice" options={{ style: 'currency', currency: 'INR' }} />
+      <BooleanField source="isFeatured" label="Featured" />
+      <BooleanField source="enabled" />
+>>>>>>> 9888cddeb393b9a1829f2d0e9bf21fc13adc446a
     </Datagrid>
   </List>
 );
 
+<<<<<<< HEAD
 // ─── Form (basePrice field removed) ──────────────────────────────────────────
+=======
+>>>>>>> 9888cddeb393b9a1829f2d0e9bf21fc13adc446a
 const PujaForm = () => (
   <TabbedForm>
     <FormTab label="Basics">
@@ -317,6 +341,10 @@ const PujaForm = () => (
       </ReferenceInput>
       <SelectInput source="serviceType" choices={serviceTypes} defaultValue="BOTH" validate={required()} />
       <NumberInput source="durationMin" label="Duration (minutes)" />
+<<<<<<< HEAD
+=======
+      <NumberInput source="basePrice" label="Base price (INR)" />
+>>>>>>> 9888cddeb393b9a1829f2d0e9bf21fc13adc446a
       <NumberInput source="sortOrder" defaultValue={0} />
       <BooleanInput source="isFeatured" defaultValue={false} />
       <BooleanInput source="enabled" defaultValue={true} />
